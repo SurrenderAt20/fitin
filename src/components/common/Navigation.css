@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: rgba(14, 14, 14, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-left: 20rem; /* Adjust margin as needed */
+  }
+  
+  .logoImg {
+    /* width: 150px; */
+    max-height: 120px;
+    margin-right: 10px; /* Add margin to create space between logo image and text */
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    margin-right: 20rem; /* Adjust margin as needed */
+  }
+  
+  .links a {
+    margin-right: 5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
