@@ -36,7 +36,22 @@
   
   .links a {
     margin-right: 5rem;
+    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .logo {
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .links {
+        display: none;
+    }
+
   }
   
