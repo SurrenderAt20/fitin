@@ -1,9 +1,9 @@
 import React from "react";
-import "./Grid.css";
+import "./SixGrid.css";
 
-export const Grid = () => {
+export const SixGrid = () => {
   return (
-    <div className="container">
+    <div className="containerGrid">
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
