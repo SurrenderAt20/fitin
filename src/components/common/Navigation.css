@@ -19,7 +19,7 @@
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 5px;
-    margin-left: 20rem; /* Adjust margin as needed */
+    /* margin-left: 20rem; */ /* Adjust margin as needed */
   }
   
   .logoImg {
@@ -31,7 +31,7 @@
   .links {
     display: flex;
     align-items: center;
-    margin-right: 20rem; /* Adjust margin as needed */
+    /* margin-right: 20rem; */ /* Adjust margin as needed */
   }
   
   .links a {
@@ -49,9 +49,9 @@
         margin-left: 0;
     }
 
-    .links {
+/*     .links {
         display: none;
-    }
+    } */
 
   }
   
