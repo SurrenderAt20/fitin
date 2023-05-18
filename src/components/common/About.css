@@ -13,3 +13,70 @@
     height: 105vh;
     transition: 0.5 ease;
 }
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contentWrapper {
+    display: grid;
+    grid-gap: 3rem;
+    width: 58%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.contentCube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    height: 330px;
+}
+
+.contentItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contentItem img{
+    width: 75%;
+    height: 100%;
+}
+
+.contentItem h3 {
+    justify-content: flex-start !important;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.contentItem p {
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 1.5rem;
+    color: #b2b2b2;
+}
+
+.btnAbout {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #fff;
+    background-color: #0e0e0e;
+    width: 140px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+}
