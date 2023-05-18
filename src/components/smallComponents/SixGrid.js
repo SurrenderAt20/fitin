@@ -1,5 +1,8 @@
 import React from "react";
 import "./SixGrid.css";
+import fitDude from "../../images/fitDude.jpg";
+import fitLadyRed from "../../images/fitLadyRed.png";
+import { FaPeopleCarry } from "react-icons/fa";
 
 export const SixGrid = () => {
   return (
@@ -7,45 +10,56 @@ export const SixGrid = () => {
       <div className="gridWrapper">
         <div className="cube">
           <div className="content">
-            {/* Content for Cube 1 */}
-            <h3>Advertisement 1</h3>
-            <img src="image1.jpg" alt="Advertisement 1" />
+            <FaPeopleCarry
+              size={100}
+              style={{ color: "#b2b2b2", marginBottom: "1.5rem" }}
+            />
+            <h3>community</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              gravida consequat.
+            </p>
           </div>
         </div>
         <div className="cube">
           <div className="content">
-            {/* Content for Cube 2 */}
-            <h3>Advertisement 2</h3>
-            <img src="image2.jpg" alt="Advertisement 2" />
-          </div>
-        </div>
-        {/* Repeat for the remaining cubes */}
-        <div className="cube">
-          <div className="content">
-            {/* Content for Cube 2 */}
-            <h3>Advertisement 3</h3>
-            <img src="image2.jpg" alt="Advertisement 2" />
+            <img src={fitDude} alt="Fitness Guy" />
           </div>
         </div>
         <div className="cube">
           <div className="content">
-            {/* Content for Cube 2 */}
-            <h3>Advertisement 4</h3>
-            <img src="image2.jpg" alt="Advertisement 2" />
+            <FaPeopleCarry
+              size={100}
+              style={{ color: "#b2b2b2", marginBottom: "1.5rem" }}
+            />
+            <h3>community</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              gravida consequat.
+            </p>
           </div>
         </div>
         <div className="cube">
           <div className="content">
-            {/* Content for Cube 2 */}
-            <h3>Advertisement 5</h3>
-            <img src="image2.jpg" alt="Advertisement 2" />
+            <img src={fitDude} alt="Fitness Guy" />
           </div>
         </div>
         <div className="cube">
           <div className="content">
-            {/* Content for Cube 2 */}
-            <h3>Advertisement 6</h3>
-            <img src="image2.jpg" alt="Advertisement 2" />
+            <FaPeopleCarry
+              size={100}
+              style={{ color: "#b2b2b2", marginBottom: "1.5rem" }}
+            />
+            <h3>community</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              gravida consequat.
+            </p>
+          </div>
+        </div>
+        <div className="cube">
+          <div className="content">
+            <img src={fitDude} alt="Fitness Guy" />
           </div>
         </div>
       </div>
