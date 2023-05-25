@@ -9,11 +9,6 @@ export const About = () => {
       <SixGrid />
       <div className="contentContainer">
         <div className="contentWrapper">
-          {/*           <div className="contentCube">
-            <div className="contentItem">
-              <img src={fitpng} />
-            </div>
-          </div> */}
           <div className="contentCube">
             <div className="contentItem">
               <h3>membership offer of the year</h3>

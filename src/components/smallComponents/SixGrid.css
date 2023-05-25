@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,11 +18,9 @@
 
 .gridWrapper {
   display: grid;
-  width: 58%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 22%);
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
 }
 
 .cube {
@@ -64,13 +62,29 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1150px){
-  
-  .gridWrapper{
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1300px) {
+  .gridWrapper {
+    grid-template-columns: repeat(2, 40%);
   }
 
   .cube {
     height: 290px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .gridWrapper {
+    display: none;
+    grid-template-columns: 0;
+  }
+
+  .cube {
+    display: none;
+    height: 200px;
+  }
+
+  .sixGridContainer{
+    display: none;
+  }
+}
+
