@@ -1,5 +1,5 @@
 export const items = [
-  { itemText: "HOME", itemLink: "/home" },
+  { itemText: "HOME", itemLink: "/" },
   { itemText: "CONCEPT", itemLink: "/Concept" },
   { itemText: "TESTIMONIALS", itemLink: "/testimonials" },
   { itemText: "CONTACT", itemLink: "/contact" },

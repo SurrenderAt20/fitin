@@ -13,7 +13,12 @@ export const Concept = () => {
             <h2>title</h2>
           </div>
           <div className="conceptText">
-            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+            <p>
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum
+            </p>
           </div>
         </div>
       </div>
