@@ -29,7 +29,7 @@ function NavigationOpen({ isOpen, onChange }) {
       </span>
       <div className="Menu-items">
         {items.map((item, index) => (
-          <Link href={item.itemLink} key={index}>
+          <Link to={item.itemLink} key={index} onClick={() => onChange(false)}>
             {item.itemText}
           </Link>
         ))}
