@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { items } from "./NavItems";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import "./NavigationOpen.css";
 
 function NavigationOpen({ isOpen, onChange }) {
@@ -28,9 +29,9 @@ function NavigationOpen({ isOpen, onChange }) {
       </span>
       <div className="Menu-items">
         {items.map((item, index) => (
-          <a href={item.itemLink} key={index}>
+          <Link href={item.itemLink} key={index}>
             {item.itemText}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
