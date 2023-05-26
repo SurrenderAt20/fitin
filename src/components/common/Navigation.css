@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right, #0e0e0e, #222222, #0e0e0e);
   }
   
   .logo {
