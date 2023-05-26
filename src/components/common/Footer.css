@@ -13,4 +13,28 @@
     padding: 50px 60px;
     background: linear-gradient(to right, #0e0e0e, #222222, #0e0e0e);
   }
+
+  .wrapperFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itemSectionOne {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconFooter {
+    margin-bottom: 0.5rem;
+  }
+
+  .borderFooter {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    height: 150px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   
