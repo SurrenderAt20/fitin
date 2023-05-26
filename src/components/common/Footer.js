@@ -18,6 +18,12 @@ export const Footer = () => {
           <AiFillTwitterSquare className="iconFooter" color="#fff" size={30} />
         </div>
         <div className="borderFooter"></div>
+        <div className="itemSectionTwo">
+          <p className="linkFooter">Home</p>
+          <p className="linkFooter">Careers</p>
+          <p className="linkFooter">Contact</p>
+          <p className="linkFooter">TOS</p>
+        </div>
       </div>
     </div>
   );

@@ -37,4 +37,17 @@
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
+  .itemSectionTwo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .itemSectionTwo p{
+    display: flex;
+    color: #fff;
+    font-weight:bolder;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
   
