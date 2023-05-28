@@ -67,16 +67,24 @@
 
 .conceptInfoGrid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
-}
-
-.conceptInfoItem {
-    width: 50%;
+  }
+  
+  .conceptInfoGridWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Adjust this value to your needs */
+  }
+  
+  .conceptInfoItem {
+    flex: 0 0 50%;
     padding: 1rem;
     margin-bottom: 1rem;
-}
+    box-sizing: border-box;
+  }
+  
 
 .reactIconImg {
     width: 100%;

@@ -32,13 +32,18 @@ export const Concept = () => {
             <div>What is the deal ?</div>
           </div>
           <div className="conceptInfoGrid">
-            {conceptItems.map((conceptItem, index) => (
-              <div className="conceptInfoItem" key={index}>
-                <div className="reactIconImg"> {conceptItem.conceptImage}</div>
-                <div>{conceptItem.conceptTitle}</div>
-                <p>{conceptItem.conceptText}</p>
-              </div>
-            ))}
+            <div className="conceptInfoGridWrapper">
+              {conceptItems.map((conceptItem, index) => (
+                <div className="conceptInfoItem" key={index}>
+                  <div className="reactIconImg">
+                    {" "}
+                    {conceptItem.conceptImage}
+                  </div>
+                  <div>{conceptItem.conceptTitle}</div>
+                  <p>{conceptItem.conceptText}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
