@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 .conceptHeader {
-    background: #fff;
+    background: linear-gradient(to right, #0e0e0e, #222222, #0e0e0e);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     transition: 0.5 ease;
 }
 
@@ -16,17 +19,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80%;
+    color: #fff;
 }
 
 .conceptTitle {
     display: flex;
+    text-align: center;
+    font-size: 48px;
     text-transform: uppercase;
     margin-top: 5rem;
 }
 
+.titleRed {
+    color: #ff3131;
+}
+
 .conceptText{
     display: flex;
+    font-size: 24px;
     margin-top: 2rem;
-    width: 500px;
     text-align: center;
+    line-height: 2rem;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+
+.conceptInfo {
+    display: flex;
+    background: #f7f7f7;
+    height: 120vh;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .conceptHeader {
+        height: 85vh;
+    }
+
+    .conceptTitle {
+        margin-top: 3em;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .conceptText {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
 }

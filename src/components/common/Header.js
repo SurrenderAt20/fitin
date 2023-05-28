@@ -8,8 +8,8 @@ export const Header = () => {
       <Navigation />
       <section className="textContainer">
         <div className="title">
-          <span>muscle</span>
-          <span className="red"> power</span>
+          <h2>muscle</h2>
+          <h2 className="red"> power</h2>
         </div>
         <div className="subTitle">
           Fitness is not a destination it is a way of life
