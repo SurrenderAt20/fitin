@@ -2,6 +2,7 @@ import React from "react";
 import "./Concept.css";
 import { Navigation } from "../../components/common/Navigation";
 import { Footer } from "../../components/common/Footer";
+import { IoFitnessOutline } from "react-icons/io";
 
 export const Concept = () => {
   return (
@@ -27,12 +28,12 @@ export const Concept = () => {
       <section className="conceptInfo">
         <div className="conceptInfoWrapper">
           <div className="conceptInfoTitle">
-            <h2>Title</h2>
+            <div>What is the deal ?</div>
           </div>
           <div className="conceptInfoGrid">
             <div className="conceptInfoGridItem">
               <div className="conceptInfoGridItemImg">
-                <img src="" />
+                <IoFitnessOutline size={50} />
               </div>
               <div className="conceptInfoGridItemTitle"></div>
               <div className="conceptInfoGridItemText"></div>

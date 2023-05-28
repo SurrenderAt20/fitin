@@ -47,11 +47,23 @@
     margin-top: 2rem;
 }
 
-
 .conceptInfo {
     display: flex;
-    background: #f7f7f7;
+    justify-content: center;
+    background: #fff;
     height: 120vh;
+}
+
+.conceptInfoWrapper {
+    margin-top: 12rem;
+}
+
+.conceptInfoTitle {
+    border: 1px solid black;
+    font-size: 48px;
+    letter-spacing: 0.5rem;
+    padding: 2rem;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 1300px) {
@@ -67,6 +79,12 @@
     }
 
     .conceptText {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .conceptInfoTitle {
+        text-align: center;
         margin-right: 5rem;
         margin-left: 5rem;
     }
