@@ -2,7 +2,8 @@ import React from "react";
 import "./Concept.css";
 import { Navigation } from "../../components/common/Navigation";
 import { Footer } from "../../components/common/Footer";
-import { IoFitnessOutline } from "react-icons/io";
+import { conceptItems } from "./ConceptItems";
+import { IoMdFitness } from "react-icons/io";
 
 export const Concept = () => {
   return (
@@ -31,13 +32,13 @@ export const Concept = () => {
             <div>What is the deal ?</div>
           </div>
           <div className="conceptInfoGrid">
-            <div className="conceptInfoGridItem">
-              <div className="conceptInfoGridItemImg">
-                <IoFitnessOutline size={50} />
+            {conceptItems.map((conceptItem, index) => (
+              <div className="conceptInfoItem" key={index}>
+                <div className="reactIconImg"> {conceptItem.conceptImage}</div>
+                <div>{conceptItem.conceptTitle}</div>
+                <p>{conceptItem.conceptText}</p>
               </div>
-              <div className="conceptInfoGridItemTitle"></div>
-              <div className="conceptInfoGridItemText"></div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
