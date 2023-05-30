@@ -1,5 +1,5 @@
 import { IoMdFitness } from "react-icons/io";
-import { ReactElement } from 'react';
+import { ReactElement } from "react";
 
 interface ConceptItem {
   conceptImage: ReactElement;
