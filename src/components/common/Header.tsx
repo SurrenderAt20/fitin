@@ -4,6 +4,7 @@ import "./Header.css";
 
 interface HeaderProps {
   title: string;
+  titleRed?: string;
   subTitle: string;
   buttonText: string;
 }
@@ -30,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({
 };
 
 interface ButtonProps {
-  text: string;
+  text?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({ text }) => {
