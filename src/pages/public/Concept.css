@@ -74,11 +74,12 @@
   .conceptInfoGridWrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     max-width: 1200px; /* Adjust this value to your needs */
   }
   
   .conceptInfoItem {
+    display: flex;
+    flex-direction: row;
     flex: 0 0 50%;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -86,8 +87,24 @@
   }
   
 
-.reactIconImg {
-    width: 100%;
+.conceptImgContainer {
+    height: 100%;
+    flex: 1;
+}
+
+.conceptContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.conceptContent div {
+    flex: 1;
+}
+
+.conceptText p {
+    flex: 1
 }
 
 .conceptInfoItem div {

@@ -35,12 +35,13 @@ export const Concept = () => {
             <div className="conceptInfoGridWrapper">
               {conceptItems.map((conceptItem, index) => (
                 <div className="conceptInfoItem" key={index}>
-                  <div className="reactIconImg">
-                    {" "}
+                  <div className="conceptImgContainer">
                     {conceptItem.conceptImage}
                   </div>
-                  <div>{conceptItem.conceptTitle}</div>
-                  <p>{conceptItem.conceptText}</p>
+                  <div className="conceptContent">
+                    <div>{conceptItem.conceptTitle}</div>
+                    <p>{conceptItem.conceptText}</p>
+                  </div>
                 </div>
               ))}
             </div>
