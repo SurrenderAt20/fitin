@@ -7,7 +7,11 @@ import { Footer } from "../../components/common/Footer";
 export const Landing = () => {
   return (
     <div>
-      <Header />
+      <Header
+        title="muscle"
+        subTitle="Fitness is not a destination it is a way of life"
+        buttonText="Learn More"
+      />
       <About />
       <Footer />
     </div>

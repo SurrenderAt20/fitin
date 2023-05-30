@@ -5,7 +5,7 @@
     "module": "commonjs",                           /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', or 'ESNext'. */
     "lib": ["dom", "dom.iterable", "esnext"],       /* Specify library files to be included in the compilation. */
     "allowJs": true,                                /* Allow JavaScript files to be compiled. */
-    "jsx": "react",                                 /* Support JSX in .tsx files: 'react', 'react-jsx', 'react-jsxdev', 'preserve', or 'react-native'. */
+    "jsx": "react-jsx",                                 /* Support JSX in .tsx files: 'react', 'react-jsx', 'react-jsxdev', 'preserve', or 'react-native'. */
     "sourceMap": true,                              /* Generates corresponding '.map' file. */
     "outDir": "./dist",                             /* Redirect output structure to the directory. */
     "strict": true,                                 /* Enable all strict type-checking options. */

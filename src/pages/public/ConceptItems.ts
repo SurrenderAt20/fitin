@@ -1,6 +1,13 @@
 import { IoMdFitness } from "react-icons/io";
+import { ReactElement } from 'react';
 
-export const conceptItems = [
+interface ConceptItem {
+  conceptImage: ReactElement;
+  conceptTitle: string;
+  conceptText: string;
+}
+
+export const conceptItems: ConceptItem[] = [
   {
     conceptImage: <IoMdFitness size={50} color="#ff3131" />,
     conceptTitle: "placeholder",

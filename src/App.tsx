@@ -1,7 +1,6 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Landing } from "./screens/public/Landing";
-import { Concept } from "./screens/public/Concept";
+import { Landing } from "./pages/public/Landing";
+import { Concept } from "./pages/public/Concept";
 
 function App() {
   return (
