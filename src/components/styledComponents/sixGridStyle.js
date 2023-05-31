@@ -1,8 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import { FaPeopleCarry } from "react-icons/fa";
-import fitDude from "../../images/fitDude.jpg";
-import fitLadyRed from "../../images/fitLadyRed.png";
 
 export const SixGridContainer = styled.div`
   display: flex;
