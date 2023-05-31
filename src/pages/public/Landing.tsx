@@ -9,6 +9,7 @@ export const Landing = () => {
     <div>
       <Header
         title="muscle"
+        titleRed="power"
         subTitle="Fitness is not a destination it is a way of life"
         buttonText="Learn More"
       />
