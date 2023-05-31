@@ -11,6 +11,10 @@ export const SixGridContainer = styled.div`
   position: relative;
   top: -10%;
   z-index: 1;
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 export const GridWrapper = styled.div`
@@ -28,6 +32,15 @@ export const Cube = styled.div`
   background-color: #fff;
   position: relative;
   height: 330px;
+
+  @media screen and (max-width: 1300px) {
+    height: 290px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    display: none;
+    height: 200px;
+  }
 `;
 
 export const Content = styled.div`
