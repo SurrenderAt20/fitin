@@ -6,14 +6,14 @@ interface HeaderProps {
   title: string;
   titleRed?: string;
   subTitle: string;
-  buttonText: string;
+  buttonText?: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   title,
   titleRed = "",
   subTitle,
-  buttonText,
+  buttonText = "",
 }) => {
   return (
     <div className="container">

@@ -19,7 +19,10 @@ export const SixGrid = () => {
           <Content>
             <StyledIcon />
             <Title>community</Title>
-            <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida consequat.</Paragraph>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              gravida consequat.
+            </Paragraph>
           </Content>
         </Cube>
         <Cube>
@@ -31,7 +34,10 @@ export const SixGrid = () => {
           <Content>
             <StyledIcon />
             <Title>community</Title>
-            <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida consequat.</Paragraph>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              gravida consequat.
+            </Paragraph>
           </Content>
         </Cube>
         <Cube>
@@ -43,7 +49,10 @@ export const SixGrid = () => {
           <Content>
             <StyledIcon />
             <Title>community</Title>
-            <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida consequat.</Paragraph>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              gravida consequat.
+            </Paragraph>
           </Content>
         </Cube>
         <Cube>
