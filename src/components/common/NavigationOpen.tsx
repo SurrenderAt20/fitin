@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { items } from "./NavItems";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
