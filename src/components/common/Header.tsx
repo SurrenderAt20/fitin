@@ -11,6 +11,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({
   title,
+  titleRed = "",
   subTitle,
   buttonText,
 }) => {
@@ -20,7 +21,7 @@ export const Header: React.FC<HeaderProps> = ({
       <section className="textContainer">
         <div className="title">
           <h2>{title}</h2>
-          <h2 className="red">{title}</h2>
+          <h2 className="red">{titleRed}</h2>
         </div>
         <div className="subTitle">{subTitle}</div>
         <div className="btn">Learn More</div>

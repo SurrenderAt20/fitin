@@ -5,7 +5,15 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./NavigationOpen.css";
 
-function NavigationOpen({ isOpen, onChange }) {
+interface NavigationOpenProps {
+  isOpen: boolean;
+  onChange: (isOpen: boolean) => void;
+}
+
+const NavigationOpen: React.FC<NavigationOpenProps> = ({
+  isOpen,
+  onChange,
+}) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("noscroll");
@@ -36,6 +44,6 @@ function NavigationOpen({ isOpen, onChange }) {
       </div>
     </div>
   );
-}
+};
 
 export default NavigationOpen;
