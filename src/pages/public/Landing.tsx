@@ -11,7 +11,6 @@ export const Landing = () => {
         title="muscle"
         titleRed="power"
         subTitle="Fitness is not a destination it is a way of life"
-        /* buttonText="Learn More" */
       />
       <About />
       <Footer />
