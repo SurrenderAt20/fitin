@@ -34,15 +34,23 @@
 }
 
 .title {
+  display: flex;
+  flex-direction: row;
   font-size: 48px;
   font-style: bold;
   text-transform: uppercase;
   padding-bottom: 1.5rem;
   width: 100%;
 
+  @media screen and (max-width:1150px){
+    justify-content: center;
+    
+  }
+
   .red {
     color: #ff3131;
   }
+
 }
 
 .subTitle {

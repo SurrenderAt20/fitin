@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
       <Navigation />
       <section className="textContainer">
         <div className="title">
-          <h2>{title}</h2>
+          <h2>{title}&nbsp;</h2>
           <h2 className="red">{titleRed}</h2>
         </div>
         <div className="subTitle">{subTitle}</div>
