@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import { FaPeopleCarry } from "react-icons/fa";
 
 export const SixGridContainer = styled.div`
@@ -30,11 +30,12 @@ export const Cube = styled.div`
   background-color: #fff;
   position: relative;
   height: 330px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 
   @media screen and (max-width: 1300px) {
     height: 290px;
   }
-  
+
   @media screen and (max-width: 900px) {
     display: none;
     height: 200px;
@@ -70,7 +71,7 @@ export const Image = styled.img`
 `;
 
 export const StyledIcon = styled(FaPeopleCarry).attrs({
-  size: 100
+  size: 100,
 })`
   color: #b2b2b2;
   margin-bottom: 1.5rem;

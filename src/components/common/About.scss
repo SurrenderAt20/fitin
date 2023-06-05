@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,31 +28,30 @@
     align-items: center;
 }
 
-
 .contentItem {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
 
-.contentItem img{
-    display: none;
-}
+    img {
+        display: none;
+    }
 
-.contentItem h3 {
-    justify-content: flex-start !important;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-}
+    h3 {
+        justify-content: flex-start !important;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
 
-.contentItem p {
-    margin-left: 100px;
-    margin-right: 100px;
-    line-height: 1.5rem;
-    color: #b2b2b2;
+    p {
+        margin-left: 100px;
+        margin-right: 100px;
+        line-height: 1.5rem;
+        color: #b2b2b2;
+    }
 }
 
 .btnAbout {
@@ -63,36 +62,33 @@
     background-color: #0e0e0e;
     width: 140px;
     text-transform: uppercase;
-    /* font-weight: bold; */
     padding: 15px;
     border-radius: 5px;
 }
 
 @media screen and (max-width: 1300px) {
-
     .containerAbout {
         height: 75vh;
     }
 
-    .contentItem{
+    .contentItem {
         margin-top: 5rem;
         margin-bottom: 5rem;
-    }
 
-    .contentItem img {
-        display: flex;
-        max-height: 100px;
-        margin-bottom: 2.5rem;
-    }
+        img {
+            display: flex;
+            max-height: 100px;
+            margin-bottom: 2.5rem;
+        }
 
-    .contentItem p {
-        margin-left: 20px;
-        margin-right: 20px;
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 }
 
 @media screen and (max-width: 900px) {
-
     .containerAbout {
         height: 75vh;
     }
@@ -107,17 +103,17 @@
 
     .contentItem {
         margin-top: 5rem;
-    }
 
-    .contentItem img {
-        display: flex;
-        max-height: 100px;
-        margin-bottom: 2.5rem;
-    }
+        img {
+            display: flex;
+            max-height: 100px;
+            margin-bottom: 2.5rem;
+        }
 
-    .contentItem p {
-        margin-left: 20px;
-        margin-right: 20px;
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     .btnAbout {

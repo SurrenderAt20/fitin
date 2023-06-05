@@ -1,12 +1,16 @@
 import React from "react";
-import "./About.css";
+import "./About.scss";
 import { SixGrid } from "../smallComponents/SixGrid";
 import logored1 from "../../images/logored1.png";
 
-export const About = () => {
+interface AboutProps {
+  includeSixGrid?: boolean;
+}
+
+export const About = ({ includeSixGrid = true }) => {
   return (
     <div className="containerAbout">
-      <SixGrid />
+      {includeSixGrid && <SixGrid />}
       <div className="contentContainer">
         <div className="contentWrapper">
           <div className="contentItem">

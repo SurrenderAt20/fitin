@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,42 +12,41 @@
     height: 15rem;
     padding: 50px 60px;
     background: linear-gradient(to right, #0e0e0e, #222222, #0e0e0e);
-  }
+}
 
-  .wrapperFooter {
+.wrapperFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .itemSectionOne {
+.itemSectionOne {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .iconFooter {
+.iconFooter {
     margin-bottom: 0.5rem;
-  }
+}
 
-  .borderFooter {
+.borderFooter {
     display: flex;
     flex-direction: column;
     border: 1px solid #fff;
     height: 150px;
     margin-left: 2rem;
     margin-right: 2rem;
-  }
+}
 
-  .itemSectionTwo {
+.itemSectionTwo {
     display: flex;
     flex-direction: column;
-  }
 
-  .itemSectionTwo p{
-    display: flex;
-    color: #fff;
-    font-weight:bolder;
-    padding-top: 9px;
-    padding-bottom: 9px;
-  }
-  
+    p {
+        display: flex;
+        color: #fff;
+        font-weight:bolder;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+}

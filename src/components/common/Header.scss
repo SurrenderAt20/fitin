@@ -26,7 +26,7 @@
   margin-left: 28rem;
   height: 100%;
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 1300px) {
     align-items: center;
     justify-content: center;
     margin-left: 0;
@@ -42,9 +42,9 @@
   padding-bottom: 1.5rem;
   width: 100%;
 
-  @media screen and (max-width:1150px){
+  @media screen and (max-width:1300px){
     justify-content: center;
-    
+    flex-wrap: wrap;
   }
 
   .red {
@@ -56,6 +56,7 @@
 .subTitle {
   font-size: 24px;
   padding-bottom: 2rem;
+  
 }
 
 .btn {
