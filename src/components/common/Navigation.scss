@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0e0e0e, #222222, #0e0e0e);
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    
+    .logoImg {
+      max-height: 120px;
+      margin-right: 10px;
+    }
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    
+    a {
+      margin-right: 5rem;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+      justify-content: center;
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+}

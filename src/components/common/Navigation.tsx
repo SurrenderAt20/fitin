@@ -3,7 +3,7 @@ import { useState } from "react";
 import logored from "../../images/logored.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import NavigationOpen from "./NavigationOpen";
-import "./Navigation.css";
+import "./Navigation.scss";
 
 export const Navigation = () => {
   const [isOpenNavOpen, setOpenNav] = useState(false);
