@@ -31,7 +31,7 @@ export const LPHeader: React.FC<LPHeaderProps> = ({
 };
 
 interface ButtonProps {
-  text?: string;
+  text: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({ text }) => {
