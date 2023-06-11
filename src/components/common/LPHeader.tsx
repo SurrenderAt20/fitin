@@ -6,14 +6,12 @@ interface LPHeaderProps {
   title: string;
   titleRed?: string;
   subTitle: string;
-  buttonText?: string;
 }
 
 export const LPHeader: React.FC<LPHeaderProps> = ({
   title,
   titleRed = "",
   subTitle,
-  buttonText = "",
 }) => {
   return (
     <div className="container">

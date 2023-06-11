@@ -1,0 +1,136 @@
+$orange: orange;
+$white: #fff;
+$black: black;
+$box-shadow: 0 0 9px #eee;
+$font-family: Roboto;
+$transition-time: 0.3s;
+$max-width: 1200px;
+$grid-gap: 6rem;
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: $max-width;
+  margin: 0 auto;
+  grid-gap: $grid-gap;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 0) and (max-width: 575px) {
+    grid-template-columns: 100%;
+  }
+
+  @media (min-width: 576px) and (max-width: 991px) {
+    grid-template-columns: auto auto;
+  }
+
+  .card {
+    max-width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    /* box-shadow: $box-shadow; */
+    transition: all ease 0.6s;
+
+    &:hover .ttl {
+      transform: translateY(-12px);
+    }
+
+    .pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      background-position: center center;
+      background-size: cover;
+
+      img {
+        width: 100%;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .ttl {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-end;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin-bottom: -36px;
+      text-align: center;
+      transition: all ease $transition-time;
+      z-index: 3;
+
+      &:after {
+        content: "";
+        background: linear-gradient(to top, $black, transparent);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        margin-bottom: -27px;
+      }
+
+      .h2 {
+        font-family: $font-family;
+        font-size: 21px;
+        color: $orange;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 1rem;
+
+        &:after {
+          content: "";
+          width: 27px;
+          border-top: 3px solid $white;
+          display: block;
+          margin: 0 auto;
+          margin-top: 21px;
+        }
+      }
+
+      .subtitle,
+      a {
+        font-family: $font-family;
+        width: 60%;
+        margin: 0 auto;
+        line-height: 22px;
+        margin-bottom: 24px;
+        color: $white;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        text-decoration: none;
+        margin: 0 auto 36px auto;
+        width: 72px;
+        height: 36px;
+        border-radius: 27px;
+        border: 1px solid $white;
+        display: block;
+        overflow: hidden;
+        transition: all ease $transition-time;
+
+        &:hover {
+          width: 81px;
+          background: rgba(255, 165, 0, 0.36);
+        }
+      }
+    }
+  }
+}
