@@ -24,7 +24,7 @@ export const LPHeader: React.FC<LPHeaderProps> = ({
           <h2 className="red">{titleRed}</h2>
         </div>
         <div className="subTitle">{subTitle}</div>
-        <Button text="Learn More" />
+        <Button text="Learn More" variant="light" />
       </section>
     </div>
   );
@@ -32,8 +32,9 @@ export const LPHeader: React.FC<LPHeaderProps> = ({
 
 interface ButtonProps {
   text: string;
+  variant: "light" | "dark";
 }
 
-export const Button: React.FC<ButtonProps> = ({ text }) => {
-  return <div className="btn">{text}</div>;
-};
+export const Button: React.FC<ButtonProps> = ({ variant, text }) => (
+  <div className={`btn ${variant}`}>{text}</div>
+);

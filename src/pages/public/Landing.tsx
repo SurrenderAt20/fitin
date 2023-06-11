@@ -13,6 +13,7 @@ export const Landing = () => {
         subTitle="Fitness is not a destination it is a way of life"
       />
       <About
+        aboutTitle="membership offer of the year"
         aboutText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
       gravida consequat. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Nunc gravida consequat. Lorem ipsum dolor sit

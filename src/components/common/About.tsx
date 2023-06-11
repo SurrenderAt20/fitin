@@ -1,15 +1,18 @@
 import React from "react";
-import "./About.scss";
 import { SixGrid } from "../smallComponents/SixGrid";
+import { Button } from "./LPHeader";
+import "./About.scss";
 import logored1 from "../../images/logored1.png";
 
 interface AboutProps {
   includeSixGrid?: boolean;
+  aboutTitle: string;
   aboutText: string;
 }
 
 export const About: React.FC<AboutProps> = ({
   includeSixGrid = true,
+  aboutTitle,
   aboutText,
 }) => {
   return (
@@ -19,9 +22,9 @@ export const About: React.FC<AboutProps> = ({
         <div className="contentWrapper">
           <div className="contentItem">
             <img src={logored1} />
-            <h3>membership offer of the year</h3>
+            <h3>{aboutTitle}</h3>
             <p> {aboutText}</p>
-            <div className="btnAbout">Learn More</div>
+            <Button variant="dark" text="Learn More" />
           </div>
         </div>
       </div>

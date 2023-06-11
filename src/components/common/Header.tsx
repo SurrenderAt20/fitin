@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({
           <p>{headerSubTitle}</p>
         </div>
         <div className="headerBtnContainer">
-          <Button text="Learn More" />
+          <Button variant="light" text="Learn More" />
         </div>
       </section>
     </div>

@@ -9,7 +9,7 @@ export const Concept = () => {
     <div>
       <Navigation />
       <Header
-        headerTitle="A Way to start your"
+        headerTitle="A Way to start your "
         headerTitleRed="fitness journey"
         headerSubTitle="Getting started is never easy - Let's build together"
       />

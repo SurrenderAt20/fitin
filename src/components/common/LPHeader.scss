@@ -62,10 +62,30 @@
 .btn {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
+  width: 140px;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 5px;
+
+  &.light{
+    background-color: #fff;
+    color: #0e0e0e;
+  }
+
+  &.dark {
+    background-color: #0e0e0e;
+    color: #fff;
+  }
+}
+
+/* .btn {
+  display: flex;
+  justify-content: center;
   color: #0e0e0e;
   background-color: #fff;
   width: 140px;
   text-transform: uppercase;
   padding: 15px;
   border-radius: 5px;
-}
+} */
