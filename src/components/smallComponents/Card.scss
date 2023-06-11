@@ -1,136 +1,115 @@
-$orange: orange;
-$white: #fff;
-$black: black;
-$box-shadow: 0 0 9px #eee;
-$font-family: Roboto;
-$transition-time: 0.3s;
-$max-width: 1200px;
-$grid-gap: 6rem;
+$background-dark: #2d3548;
+$text-light: rgba(255, 255, 255, 0.6);
+$text-lighter: rgba(255, 255, 255, 0.9);
+$spacing-s: 8px;
+$spacing-m: 16px;
+$spacing-l: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 64px;
+$width-container: 1200px;
 
-.cards {
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  height: 100%;
+}
+
+.cardContainer {
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: $spacing-xxl $spacing-l;
+}
+
+.cardGrid {
   display: grid;
-  grid-template-columns: auto auto auto;
-  max-width: $max-width;
-  margin: 0 auto;
-  grid-gap: $grid-gap;
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: $spacing-l;
+  grid-row-gap: $spacing-l;
+  max-width: $width-container;
   width: 100%;
+}
 
-  @media (min-width: 0) and (max-width: 575px) {
-    grid-template-columns: 100%;
+@media (max-width: 960px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 210px);
+    justify-content: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .cardGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  list-style: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
   }
 
-  @media (min-width: 576px) and (max-width: 991px) {
-    grid-template-columns: auto auto;
+  .cardBackground {
+    background-size: cover;
+    background-position: center;
+    border-radius: $spacing-l;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+
+    &:hover {
+      transform: scale(1.05) translateZ(0);
+    }
   }
 
-  .card {
-    max-width: 100%;
-    height: 450px;
-    overflow: hidden;
-    border-radius: 12px;
-    position: relative;
-    /* box-shadow: $box-shadow; */
-    transition: all ease 0.6s;
-
-    &:hover .ttl {
-      transform: translateY(-12px);
+  &:hover {
+    .cardBackground {
+      filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
     }
+  }
 
-    .pic {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      background-position: center center;
-      background-size: cover;
+  .cardContent {
+    left: 0;
+    padding: $spacing-l;
+    position: absolute;
+    top: 0;
+  }
 
-      img {
-        width: 100%;
+  .cardCategory {
+    color: $text-light;
+    font-size: 0.9rem;
+    margin-bottom: $spacing-s;
+    text-transform: uppercase;
+  }
 
-        &:hover {
-          transform: scale(1.2);
-        }
-      }
-    }
-
-    .ttl {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: flex-end;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      margin-bottom: -36px;
-      text-align: center;
-      transition: all ease $transition-time;
-      z-index: 3;
-
-      &:after {
-        content: "";
-        background: linear-gradient(to top, $black, transparent);
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        z-index: -1;
-        margin-bottom: -27px;
-      }
-
-      .h2 {
-        font-family: $font-family;
-        font-size: 21px;
-        color: $orange;
-        font-weight: bold;
-        text-transform: uppercase;
-        position: relative;
-        margin-bottom: 1rem;
-
-        &:after {
-          content: "";
-          width: 27px;
-          border-top: 3px solid $white;
-          display: block;
-          margin: 0 auto;
-          margin-top: 21px;
-        }
-      }
-
-      .subtitle,
-      a {
-        font-family: $font-family;
-        width: 60%;
-        margin: 0 auto;
-        line-height: 22px;
-        margin-bottom: 24px;
-        color: $white;
-      }
-
-      .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $white;
-        text-decoration: none;
-        margin: 0 auto 36px auto;
-        width: 72px;
-        height: 36px;
-        border-radius: 27px;
-        border: 1px solid $white;
-        display: block;
-        overflow: hidden;
-        transition: all ease $transition-time;
-
-        &:hover {
-          width: 81px;
-          background: rgba(255, 165, 0, 0.36);
-        }
-      }
-    }
+  .cardHeading {
+    color: $text-lighter;
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
   }
 }
