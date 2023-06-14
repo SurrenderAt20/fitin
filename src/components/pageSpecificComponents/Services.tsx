@@ -20,7 +20,7 @@ const cardData: CardData[] = [
     id: 1,
     bgImageUrl:
       "https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    category: "Category 1",
+    category: "Click to read more",
     heading: "Heading 1",
     modalContent: "This is the modal content for card 1",
   },
