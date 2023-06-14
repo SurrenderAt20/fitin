@@ -53,8 +53,11 @@ const cardData: CardData[] = [
 export const Services: React.FC<ServiceProps> = ({ title }) => {
   const [modalContent, setModalContent] = useState<string | null>(null);
 
-  const handleCardClick = (content: string) => {
-    setModalContent(content);
+  const handleCardClick = (id: number) => {
+    const card = cardData.find((data) => data.id === id);
+    if (card) {
+      setModalContent(card.modalContent);
+    }
   };
 
   return (
@@ -65,10 +68,7 @@ export const Services: React.FC<ServiceProps> = ({ title }) => {
       <div className="cardContainer">
         <div className="cardGrid">
           {cardData.map((data) => (
-            <div
-              onClick={() => handleCardClick(data.modalContent)}
-              key={data.id}
-            >
+            <div onClick={() => handleCardClick(data.id)}>
               <Card
                 bgImageUrl={data.bgImageUrl}
                 category={data.category}

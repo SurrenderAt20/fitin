@@ -12,7 +12,7 @@ export const Card: React.FC<CardProps> = ({
   bgImageUrl,
   category,
   heading,
-  link = "#",
+  link,
 }) => {
   return (
     <a className="card" href={link}>
